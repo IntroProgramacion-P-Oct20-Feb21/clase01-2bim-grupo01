@@ -14,8 +14,9 @@ public class Ejemplo02 {
         String cadena = "Ecuador sudamerica";
         char valor;
         int valorNumerico;
-        
-        System.out.println(cadena.length()); // 7
+        int contadorMayusculas = 0 ;
+        int contadorMinusculas = 0 ;
+        //System.out.println(cadena.length()); // 7
         
         // for (int i = 0; i < 7; i++) { // 0 , 1 , 2, 3, 4 , 5, 6
         for (int i = 0; i < cadena.length(); i++) {
@@ -26,8 +27,9 @@ public class Ejemplo02 {
                                       // Ecuador.charAt(4) >> d
                                       // Ecuador.charAt(5) >> o
                                       // Ecuador.charAt(6) >> r
-                                       
-            valorNumerico = (int) valor; // 
+                                
+            valorNumerico = (int) valor; //
+            if (valor == 97)
             System.out.printf("%s (%d)\n", valor, valorNumerico);
         }
     }
