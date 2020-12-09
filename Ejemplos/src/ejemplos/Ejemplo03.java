@@ -16,9 +16,12 @@ public class Ejemplo03 {
         String cadena = "";
         
         for (int i = 1; i <= 10; i++){
-            for (int contador = 1; contador <= )
+            for (int contador = 1; contador <= i; contador++){
+                cadena = String.format("%s%*", cadena);
+            }
+            cadena = String.format("%s\n", cadena);
         }
-        
+        System.out.printf("%s\n", cadena);
         
         
         
