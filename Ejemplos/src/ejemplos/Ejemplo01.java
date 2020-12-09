@@ -27,7 +27,11 @@ public class Ejemplo01 {
             }
 
         }
-     
+
+        System.out.printf("%s", cadena);
+        
+        
+        
     }
     
 }
