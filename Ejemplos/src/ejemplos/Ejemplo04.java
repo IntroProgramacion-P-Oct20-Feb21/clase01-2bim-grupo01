@@ -20,6 +20,9 @@ public class Ejemplo04 {
         int c = caracter;
         System.out.println((int)caracter);
         
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
     }
     
 }
