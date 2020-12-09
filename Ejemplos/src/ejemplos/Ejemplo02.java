@@ -29,7 +29,9 @@ public class Ejemplo02 {
                                       // Ecuador.charAt(6) >> r
                                 
             valorNumerico = (int) valor; //
-            if (valor == 97)
+            if ((valor == 97) && (valor == 122)){
+                contadorMinusculas = contadorMinusculas + 1;
+            }
             System.out.printf("%s (%d)\n", valor, valorNumerico);
         }
     }
