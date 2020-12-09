@@ -12,7 +12,19 @@ package ejemplos;
 public class Ejemplo03 {
 
     public static void main(String[] args) {
-        String cadena = "Loja";
+        
+        String cadena = "";
+        
+        for (int i = 1; i <= 10; i++){
+            for (int contador = 1; contador <= )
+        }
+        
+        
+        
+        
+        
+        
+        /* String cadena = "Loja";
         String reporte = "";
         for (int i = 0; i < cadena.length(); i++) {
             reporte = String.format("%s%s", reporte, cadena.charAt(i));
@@ -27,6 +39,6 @@ public class Ejemplo03 {
 
         }
 
-        System.out.printf("%s\n", reporte);
+        System.out.printf("%s\n", reporte); */
     }
 }

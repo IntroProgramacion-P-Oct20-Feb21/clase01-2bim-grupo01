@@ -19,17 +19,21 @@ public class Ejemplo01 {
         // char caracter = 'A';
         // int c = caracter;
         // System.out.println((int)caracter);
-         String cadena = " a e i o u ";
-        char valor;
-        int valorNumerico;
-            
-           System.out.println(cadena.length()); 
+        String cadena = "";
         
-     
-        for (int i = 0; i < cadena.length(); i++) {
-            valor = cadena.charAt(i); 
-            valorNumerico = (int) valor; 
-            System.out.printf("%s (%d)\n", valor, valorNumerico);
+        
+        for (int i = 97; i <= 122; i++) {
+            switch ((char)i){
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':            
+                    cadena = String.format("%s%s |%d|\n", cadena, (char)i, i);
+                    break;
+            }
+        
         }
+        System.out.printf("%s", cadena);
     }
 }
