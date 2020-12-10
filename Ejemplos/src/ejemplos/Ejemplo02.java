@@ -28,14 +28,18 @@ public class Ejemplo02 {
                                       // Ecuador.charAt(5) >> o
                                       // Ecuador.charAt(6) >> r
                                 
-            valorNumerico = (int) valor; //
-            if ((valor == 97) && (valor == 122)){
+            valorNumerico = ((int)valor); 
+            if ((valorNumerico >= 97) && (valorNumerico <= 122)){
                 contadorMinusculas = contadorMinusculas + 1;
             }
-             if ((valor == 65) && (valor == 90)){
-                contadorMayusculas = contadorMayusculas+ 1;
+            if ((valorNumerico >= 65) && (valorNumerico <= 90)){
+                contadorMayusculas = contadorMayusculas + 1;
             }
-            System.out.printf("%s (%d)\n", valor, valorNumerico);
+            
         }
+        System.out.printf("En la cadena ingresada existen: "
+                + "%d letras mayusculas y %d letras minusculas.\n",
+                contadorMayusculas,
+                contadorMinusculas);
     }
 }
