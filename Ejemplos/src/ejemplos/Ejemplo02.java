@@ -32,6 +32,9 @@ public class Ejemplo02 {
             if ((valor == 97) && (valor == 122)){
                 contadorMinusculas = contadorMinusculas + 1;
             }
+             if ((valor == 65) && (valor == 90)){
+                contadorMayusculas = contadorMayusculas+ 1;
+            }
             System.out.printf("%s (%d)\n", valor, valorNumerico);
         }
     }
